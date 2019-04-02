@@ -1,0 +1,192 @@
+html, body {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fffdef; /*#edf9ff*/
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-behavior: smooth;
+}
+
+/*START hide the scrollbar*/
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/*END of hiding scrollbar*/
+
+body {
+  margin: -1em;
+  overflow: hidden;
+}
+
+
+/* unvisited link */
+
+a.email {
+  text-decoration: underline solid #95cdf9;
+}
+
+a.email:link {
+  color: #1554b2;
+}
+
+a.email:hover {
+  color: #95cdf9;
+  transition: 0.2s;
+}
+
+/* visited link */
+a.email:visited {
+  color: darkblue;
+}
+
+/*START navbar button links*/
+
+a {
+  color: #1554b2;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1554b2; 
+}
+
+/*END navbar button links*/
+
+div.header1 {
+  background-color: darkblue;
+  padding: 1%;
+}
+
+div.header2 {
+  background-color: darkblue;
+  padding: 3.3em;
+  margin: auto;
+  text-align: left;
+  color: #ffdb4f;
+  letter-spacing: 0.02em;
+}
+
+div.headertitle {
+  font-size: 300px; 
+  font-weight: 1200; 
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.textonly {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 10px;
+  background: transparent;
+  color: white;
+  z-index: 2;
+}
+
+.textonly:hover {
+  transition: 0.2s;
+  box-shadow: 5px;
+  background-color: #95cdf9;
+  color: #1554b2; 
+}
+
+
+/*START navigation bar css*/
+
+.navbar {
+  background-color: #95cdf9; /*#98e7f2*/
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 110%;
+}
+
+.btn-primary.outline {
+  border: none;
+  color: #1554b2;
+  font-weight: 700; /*makes text bold*/
+  letter-spacing: 0.01em;
+}
+
+.btn.outline {
+  background: none;
+  padding: 12px 22px;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+  color: #1554b2; 
+  background-color: #5aa5fc;
+  transition: 0.2s;
+}
+
+/*END navigation bar css*/
+
+.registrationbox {
+  display: block;
+  width: 70%;
+  height: 20%;
+  padding: 50px;
+  border: 2px solid #ffe47a;
+  border-radius: 7px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: #fffad1;
+}
+
+.registrationbtn {
+  border: none;
+  color: #1554b2;
+  font-weight: 700; /*makes text bold*/
+  letter-spacing: 0.02em;
+  background-color: #95cdf9;
+}
+
+.registrationbtn:hover {
+  transition: 0.2s;
+  background-color: #7bb7e5;
+  color: #1554b2;
+}
+
+.viewbookletbox {
+  display: block;
+  width: 70%;
+  height: 20%;
+  padding: 50px;
+  border: 2px solid #ffcd66;
+  border-radius: 7px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: #ffe0a0;
+}
+
+
+.maintext {
+  padding: 2em 15em 5em 15em;
+}
+
+.mainpage {
+  padding-top: 0.5em; 
+  font-size: 130%;
+}
+
+.bottomdiv {
+  background-color: darkblue; /*orig color: #1554b2*/
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  color: #95cdf9;
+}

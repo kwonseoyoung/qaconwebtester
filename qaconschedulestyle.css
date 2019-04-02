@@ -1,0 +1,161 @@
+html, body {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fffdef; /*#edf9ff*/
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-behavior: smooth;
+}
+
+/*START hide the scrollbar*/
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/*END of hiding scrollbar*/
+
+body {
+  margin: -1em;
+  overflow: hidden;
+}
+
+
+/* unvisited link */
+
+a.email {
+  text-decoration: underline solid #95cdf9;
+}
+
+a.email:link {
+  color: #1554b2;
+}
+
+a.email:hover {
+  color: #95cdf9;
+  transition: 0.2s;
+}
+
+/* visited link */
+a.email:visited {
+  color: darkblue;
+}
+
+/*START navbar button links*/
+
+a {
+  color: #1554b2;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1554b2; 
+}
+
+/*END navbar button links*/
+
+/*START navigation bar css*/
+
+.navbar {
+  background-color: #95cdf9; /*#98e7f2*/
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 10;
+  width: 102%;
+}
+
+
+.btn-primary.outline {
+  border: none;
+  color: #1554b2;
+  font-weight: 700; /*makes text bold*/
+  letter-spacing: 0.01em;
+}
+
+.btn.outline {
+  background: none;
+  padding: 12px 22px;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+  color: #1554b2; 
+  background-color: #5aa5fc;
+  transition: 0.2s;
+}
+
+/*END navigation bar css*/
+
+.title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.sessiontitle {
+  text-align: center;
+  font-weight: 300;
+}
+
+/*START Grid*/
+
+.grid-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: minmax(175px, auto);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  align-content: space-evenly;
+}
+
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/*
+@media screen and (min-width: 10em) {
+  .grid-container {
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 10px;
+  }
+}
+
+
+@media screen and (max-width: 5em) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+  }
+}
+*/
+.grid-item {
+  background-color: purple;
+}
+
+/*END Grid*/
+
+.bottomdiv {
+  background-color: #1554b2;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  color: #95cdf9;
+}
